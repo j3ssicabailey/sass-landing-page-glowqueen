@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Font Family
+$primary-font: 'Poppins', Arial, sans-serif;
+
+// Primary colour Scheme
+$dark-accent: #264065;
+$light-accent: #A9D6CB;
+$dark-text: #070D15;
+$light-text: #909090;
+
+// Font Sizes
+$font-size-large: 4rem;      // 64px 
+$font-size-medium: 2.25rem;  // 36px 
+$font-size-small: 1.5rem;    // 24px 
+$font-size-base: 1.125rem;   // 18px 
+
+// Screen sizes
+$largedesktop: (min-width: 1441px) and (max-width: 1920px);
+$desktop: (min-width: 1025px) and (max-width: 1440px);
+$tablet: (min-width: 768px) and (max-width: 1024px);
+$tabletmobile: (min-width: 320px) and (max-width: 1024px);
+$mobile: (min-width: 320px) and (max-width: 480px);
+$smallmobile: (min-width: 568px) and (max-width: 650px);
+$rotate: (min-height: 0) and (max-height: 550px);
+

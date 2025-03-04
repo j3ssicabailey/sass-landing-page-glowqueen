@@ -1,0 +1,10 @@
+.navbar {
+    color: $dark-accent;
+    .logo {
+        font-weight: bold;
+        font-size: $font-size-medium;
+        span {
+            color: $light-accent;
+        }
+    }
+}
