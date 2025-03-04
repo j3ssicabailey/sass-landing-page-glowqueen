@@ -63,3 +63,22 @@ margin-right: 60px;
         height: auto;
     }
 }
+
+.dropdown {
+    position: relative; 
+
+    .dropdown-menu {
+    display: none;  
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    list-style: none;     
+    padding: 5px;
+    margin: 0;
+    min-width: 200px
+    }
+
+    &:hover .dropdown-menu {
+    display: block; 
+    }
+}
