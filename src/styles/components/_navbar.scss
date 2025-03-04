@@ -1,10 +1,65 @@
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: $dark-accent;
+    padding: 20px;
     .logo {
         font-weight: bold;
         font-size: $font-size-medium;
+
         span {
             color: $light-accent;
         }
+    }
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start; 
+    padding-left: 50px; 
+
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        gap: 32px;
+        a {
+            text-decoration: none;
+        }
+    };
+}
+
+.nav-buttons {
+display: flex;
+gap: 20px;
+padding: 20px; 
+margin-left: 20px;
+margin-right: 60px;
+    a {
+        padding: 12px 30px;
+        ;
+    }
+    a:last-child {
+        background-color: $dark-accent;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+}
+
+.nav-icons {
+    display: flex; 
+    gap: 40px; 
+    align-items: center;
+
+    a {
+        display: block; 
+    }
+
+    img {
+        width: 18px; 
+        height: auto;
     }
 }
