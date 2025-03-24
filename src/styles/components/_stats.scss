@@ -1,0 +1,28 @@
+.stats {
+    background-color: white;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    position: absolute;
+    bottom: -130px;
+    left: 30px;
+    .stat {
+        text-align: center;
+        img {
+            width: 3.5rem;
+        }
+        h3 {
+            color: $dark-accent;
+            font-size: $font-size-medium;
+            font-weight: 500;
+        }
+        p {
+            color: $light-text;
+            font-size: 0.9rem;
+        }
+    }
+
+}
