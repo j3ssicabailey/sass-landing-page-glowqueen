@@ -8,12 +8,13 @@ $dark-accent: #264065;
 $light-accent: #A9D6CB;
 $dark-text: #070D15;
 $light-text: #909090;
+$light-background: #fafafa;
 
 // Font Sizes
-$font-size-large: 4rem;      // 64px 
-$font-size-medium: 2.25rem;  // 36px 
-$font-size-small: 1.5rem;    // 24px 
-$font-size-base: 1.125rem;   // 18px 
+$font-size-large: 3.5rem;    
+$font-size-medium: 2rem;
+$font-size-small: 1.25rem;   
+$font-size-base: 1rem;   
 
 // Screen sizes
 $largedesktop: (min-width: 1441px) and (max-width: 1920px);

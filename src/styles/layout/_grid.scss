@@ -13,21 +13,19 @@
     justify-content: center;
     z-index: 3;
         h1 {
-            width: 70%;
+            width: 60%;
             color: $dark-accent;
             font-size: $font-size-large;
             line-height: 5rem;
             padding-top: 20px;
         }
         p {
-            width: 65%;
+            width: 60%;
             color: $light-text;
             font-size: $font-size-small;
             padding-top: 28px;
             padding-bottom: 20px;
             line-height: 2rem;
-
-    
         }
     }
 
@@ -39,7 +37,7 @@
         img {
             position: absolute;
             top: -6rem;
-            left: -18rem;
+            left: -22rem;
             transform: translateY(-50%);
             max-width: 250%; 
             height: auto;
