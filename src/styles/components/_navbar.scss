@@ -7,6 +7,7 @@
     .logo {
         font-weight: bold;
         font-size: $font-size-medium;
+        margin-right: 36px;
 
         span {
             color: $light-accent;
@@ -24,34 +25,18 @@ nav {
         display: flex;
         justify-content: flex-start;
         list-style: none;
-        gap: 32px;
+        gap: 4rem;
+        margin-left: 30px;
         a {
             text-decoration: none;
+            color: $dark-accent;
         }
     };
 }
 
-.nav-buttons {
-display: flex;
-gap: 20px;
-padding: 20px; 
-margin-left: 20px;
-margin-right: 60px;
-    a {
-        padding: 12px 30px;
-        ;
-    }
-    a:last-child {
-        background-color: $dark-accent;
-        color: white;
-        text-decoration: none;
-        border-radius: 20px;
-    }
-}
-
 .nav-icons {
-    display: flex; 
-    gap: 40px; 
+    display: flex;
+    gap: 40px;
     align-items: center;
 
     a {
@@ -59,10 +44,11 @@ margin-right: 60px;
     }
 
     img {
-        width: 18px; 
+        width: 22px;
         height: auto;
     }
 }
+
 
 .dropdown {
     position: relative; 
