@@ -5,11 +5,18 @@
 
     .hero-content {
     grid-column: 1;
-    padding-left: 5%; // Add some left padding
+    padding-left: 5%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 3;
+        h1 {
+            width: 160%;
+            max-width: 160%;
+            color: $dark-accent;
+            font-size: $font-size-large;
+            line-height: 5rem;
+        }
     }
 
     .hero-image {
@@ -26,26 +33,7 @@
             height: auto;
         }
     }
-
-    .vector-background {
-        background-color: $light-accent; 
-        grid-column: 3;
-        position: relative;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
         
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 60%;
-            height: 60%;
-            object-fit: cover;
-            opacity: 0.1; 
-            z-index: 2;
-        }
-    }
+
+    
 }
