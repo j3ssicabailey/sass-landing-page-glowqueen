@@ -1,39 +1,48 @@
 .hero {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
+    grid-template-areas: "hero hero bgd" ;
     position: relative;
 
     .hero-content {
-    grid-column: 1;
-    padding-left: 5%; 
+    grid-area: hero;
+    padding-left: 10px;
+    padding-top: 20px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 3;
         h1 {
-            width: 160%;
-            max-width: 160%;
+            width: 70%;
             color: $dark-accent;
             font-size: $font-size-large;
             line-height: 5rem;
+            padding-top: 20px;
+        }
+        p {
+            width: 65%;
+            color: $light-text;
+            font-size: $font-size-small;
+            padding-top: 28px;
+            padding-bottom: 20px;
+            line-height: 2rem;
+
+    
         }
     }
 
     .hero-image {
     grid-column: 2;
     position: relative;
-    z-index: 2;
+    z-index: 5;
     
         img {
             position: absolute;
-            top: 18rem;
-            left: -14rem;
+            top: -6rem;
+            left: -18rem;
             transform: translateY(-50%);
             max-width: 250%; 
             height: auto;
         }
     }
-        
-
-    
 }

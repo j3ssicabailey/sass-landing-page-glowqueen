@@ -4,6 +4,16 @@
 body {
     position: relative;
     background-color: transparent;
+    .offwhite-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100vh; 
+        background-color: $light-background;
+    
+        z-index: -1;
+    }
     
     .light-background {
         position: absolute;
