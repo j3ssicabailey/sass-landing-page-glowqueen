@@ -1,59 +1,69 @@
-.nav-buttons {
+/* Common button styles for both nav and cta buttons */
+.nav-buttons a, 
+.cta-buttons a {
     display: flex;
-    padding: 20px;
-    margin-left: 2rem;  
-    margin-right: 10rem; 
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; 
+}
 
-    a.light-button,
-    a.dark-button {
-        margin-right: 10px;  
-        padding: 12px 30px;
-    }
-
-    a.light-button {
-        color: $dark-accent;
-    }
-
-    a.dark-button {
-        background-color: $dark-accent;
-        color: white;
-        text-decoration: none;
-        border-radius: 20px;
+a.light-button {
+    color: $dark-accent;
+    gap: 10px; 
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
     }
 }
 
+a.dark-button {
+    background-color: $dark-accent;
+    color: white;
+    text-decoration: none;
+    z-index: 10;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 20px;
+    margin-left: 2rem;
+    margin-right: 10rem;
+}
 
 .cta-buttons {
+    position: relative;   
+    z-index: 6;          
     display: flex;
-    align-items: center; 
-    gap: 1.5rem; 
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 2.5rem;
     
     a {
         display: flex;
         align-items: center;
         text-decoration: none;
-    }
-    a.light-button {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        padding: 10px 30px;
-        color: $dark-accent;
-    }
-    img {
-        width: 6rem; 
-        height: 6rem;
-        margin-top: 2rem;
-    }
-    a.dark-button {
-        background-color: $dark-accent;
-        color: white;
+        padding: 12px 30px;
+        margin-right: 10px;
         border-radius: 20px;
-        padding: 10px 40px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img {
+        width: 2.5rem;         
+        height: 2.5rem;        
+        border-radius: 50%;   
+        padding: 10px;       
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+        margin-left: 1rem;
+        margin-right: -2rem;
     }
 }
-
-
-
-
-
