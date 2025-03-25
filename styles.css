@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+/* Common button styles for both nav and cta buttons */
+.nav-buttons a,
+.cta-buttons a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+a.light-button {
+  color: #264065;
+  gap: 10px;
+}
+a.light-button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+a.dark-button {
+  background-color: #264065;
+  color: white;
+  text-decoration: none;
+  z-index: 10;
+}
+a.dark-button:hover {
+  transform: scale(1.1);
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 20px;
+  margin-left: 2rem;
+  margin-right: 10rem;
+}
+
+.cta-buttons {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 2.5rem;
+}
+.cta-buttons a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 12px 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cta-buttons img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: 1rem;
+  margin-right: -2rem;
+}
+
+.navbar {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #264065;
+  padding: 20px;
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 36px;
+}
+.navbar .logo span {
+  color: #A9D6CB;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 3rem;
+  margin-left: 30px;
+}
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #264065;
+  padding: 2px 6px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+nav ul li a:hover {
+  color: #fff;
+  background-color: #264065;
+  cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.nav-icons a {
+  display: block;
+}
+.nav-icons img {
+  width: 22px;
+  height: auto;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  min-width: 200px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.stats {
+  background-color: white;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: -300px;
+  left: 30px;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+}
+.stats:hover {
+  transform: scale(1.05);
+}
+.stats .stat {
+  text-align: center;
+  padding: 0px;
+}
+.stats .stat img {
+  width: 3.5rem;
+  padding-bottom: 10px;
+}
+.stats .stat h3 {
+  color: #264065;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.stats .stat p {
+  color: #909090;
+  font-size: 0.9rem;
+}
+
+.floating-testimonials {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 5;
+}
+.floating-testimonials .testimonial {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 350px;
+  position: relative;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.floating-testimonials .testimonial:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.floating-testimonials .testimonial#first-testimonial {
+  transform: translate(-5%, 20%);
+}
+.floating-testimonials .testimonial#second-testimonial {
+  transform: translate(-40%, 40%);
+}
+.floating-testimonials .testimonial blockquote {
+  margin-bottom: 1rem;
+}
+.floating-testimonials .testimonial blockquote p {
+  color: black;
+  font-style: italic;
+  line-height: 1.4;
+  font-style: normal;
+  transition: color 0.3s ease;
+}
+.floating-testimonials .testimonial blockquote:hover blockquote p {
+  color: #264065;
+}
+.floating-testimonials .testimonial cite {
+  display: block;
+  font-weight: bold;
+  color: #264065;
+  font-style: normal;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "hero hero bgd";
+  position: relative;
+}
+.hero .hero-content {
+  grid-area: hero;
+  padding-left: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.hero .hero-content h1 {
+  width: 60%;
+  color: #264065;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  padding-top: 3.5rem;
+}
+.hero .hero-content p {
+  width: 60%;
+  color: #909090;
+  font-size: 1.25rem;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  line-height: 2rem;
+}
+.hero .hero-image {
+  grid-column: 2;
+  position: relative;
+}
+.hero .hero-image img {
+  position: absolute;
+  top: -6rem;
+  left: -22rem;
+  transform: translateY(-50%);
+  max-width: 250%;
+  height: auto;
+}
+
+body {
+  position: relative;
+  background-color: transparent;
+}
+body .offwhite-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100vh;
+  background-color: #fafafa;
+  z-index: -1;
+}
+body .light-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100vh;
+  background-color: #A9D6CB;
+  z-index: -1;
+}
+body .light-background .vector-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+body .light-background .vector-background img {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=styles.css.map */
