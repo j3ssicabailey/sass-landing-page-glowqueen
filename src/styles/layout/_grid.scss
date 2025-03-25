@@ -1,24 +1,26 @@
 .hero {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-areas: "hero hero bgd" ;
+    grid-template-areas: "hero hero bgd";
     position: relative;
 
     .hero-content {
-    grid-area: hero;
-    padding-left: 10px;
-    padding-top: 20px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 3;
+        grid-area: hero;
+        padding-left: 10px;
+        padding-top: 20px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative; 
+        
         h1 {
             width: 60%;
             color: $dark-accent;
             font-size: $font-size-large;
             line-height: 5rem;
-            padding-top: 20px;
+            padding-top: 3.5rem;
         }
+
         p {
             width: 60%;
             color: $light-text;
@@ -30,10 +32,9 @@
     }
 
     .hero-image {
-    grid-column: 2;
-    position: relative;
-    z-index: 5;
-    
+        grid-column: 2;
+        position: relative;
+        
         img {
             position: absolute;
             top: -6rem;
