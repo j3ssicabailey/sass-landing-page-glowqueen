@@ -26,13 +26,15 @@ nav {
     ul {
         display: flex;
         justify-content: flex-start;
+        align-items: center;
         list-style: none;
-        gap: 3rem;
+        gap: 2.5rem;
         margin-left: 30px;
 
         li {
 
             a {
+                font-size: $font-size-xs;
                 display: inline-block;
                 text-decoration: none;
                 color: $dark-accent;
@@ -52,22 +54,28 @@ nav {
 
 .nav-icons {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
+    transform: translateX(-30px);
 
     a {
         display: block; 
     }
 
     img {
-        width: 22px;
+        width: 18px;
         height: auto;
     }
 }
 
 
 .dropdown {
-    position: relative; 
+    position: relative;
+    a {
+        display: inline-flex; 
+        align-items: center; 
+        gap: 0.5rem; 
+    }
 
     .dropdown-menu {
     display: none;  

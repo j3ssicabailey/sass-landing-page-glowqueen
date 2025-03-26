@@ -8,10 +8,11 @@
     z-index: 5;
 
     .testimonial {
+        font-size: $font-size-xs;
         background-color: rgba(255, 255, 255, 0.7);
         border-radius: 10px;
-        padding: 1rem;
-        max-width: 350px;
+        padding: 1.7rem;
+        max-width: 340px;
         position: relative;
         transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
@@ -21,11 +22,11 @@
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
         }
         &#first-testimonial {
-            transform: translate(-5%, 20%);
+            transform: translate(0%, 18%);
         }
 
         &#second-testimonial {
-            transform: translate(-40%, 40%);
+            transform: translate(-25%, 32%);
         }
 
         blockquote {

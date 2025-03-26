@@ -1,12 +1,14 @@
 /* Common button styles for both nav and cta buttons */
 .nav-buttons a, 
 .cta-buttons a {
+    width: auto; 
+    font-size: $font-size-base;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 12px 32px;
     margin-right: 10px;
-    border-radius: 20px;
+    border-radius: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative; 
 }
@@ -14,6 +16,12 @@
 a.light-button {
     color: $dark-accent;
     gap: 10px; 
+    
+    
+    .nav-buttons & {
+        text-decoration: underline; /* Underline only in nav */
+    }
+    
     &:hover {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
         transform: scale(1.1);
@@ -30,22 +38,27 @@ a.dark-button {
     }
 }
 
+/* Nav buttons styles */
 .nav-buttons {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0; 
     padding: 20px;
-    margin-left: 2rem;
-    margin-right: 10rem;
+    transform: translateX(-30px);
+    margin-right: 2rem;
+    a {
+        font-size: $font-size-xs;
+    }
 }
 
+/* CTA buttons styles */
 .cta-buttons {
     position: relative;   
     z-index: 6;          
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-    padding-top: 2.5rem;
+    gap: 2rem; 
+    padding-top: 1.5rem;
     
     a {
         display: flex;
